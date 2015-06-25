@@ -6,6 +6,10 @@
 \usepackage{wallpaper}
 \usepackage{enumitem}
 
+\usepackage{graphicx}
+
+\usepackage{multirow}
+
 % move the level-2 items to the left
 \setlist[itemize,2]{leftmargin=10pt}
 
@@ -22,8 +26,8 @@
 % convert hops_upper_left.png -background white -gravity center -extent 587x382 hops_upper_left_border.png
 % convert hops_lower_right.png -background white -gravity center -extent 587x382 hops_lower_right_border.png
 
-\ULCornerWallPaper{.4}{hops_upper_left_border.pdf}
-\LRCornerWallPaper{.4}{hops_lower_right_border.pdf}
+\ThisULCornerWallPaper{.4}{hops_upper_left_border.pdf}
+\ThisLRCornerWallPaper{.4}{hops_lower_right_border.pdf}
 
 % \textsc{{\LARGE Ceremony Program}
 % \vspace*{\fill}
@@ -51,20 +55,20 @@
 
 \begin{itemize}
 
-\item [] Processional
-\item [] Officiant's Welcome
-\item [] Community Greeting
-\item [] Reading: An excerpt from \underline{Corelli's Mandolin} by Louis de Berniere
+\item [] \textsc{Processional}
+\item [] \textsc{Officiant's Welcome}
+\item [] \textsc{Community Greeting}
+\item [] \textsc{Reading}: An excerpt from \underline{Corelli's Mandolin} by Louis de Berniere
 \begin{itemize}[topsep=-5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item [] \textit{read by Rich Ware}
 \end{itemize}
 
-\item [] Beer Brewing Unity Ceremony
+\item [] \textsc{Home Brewing Unity Ceremony}
 \begin{itemize}[topsep=-5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item [] \textit{performed by Wade Mollison and Paul Ware}
 \end{itemize}
 
-\item [] Reading: Goodridge \textit{v.} Department of Public Health
+\item [] \textsc{Reading}: Goodridge \textit{v.} Department of Public Health
 \begin{itemize}[topsep=-5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item [] \textit{read by Kate Mollison}
 
@@ -76,9 +80,9 @@
 %
 % Civil marriage is at once a deeply personal commitment to another human being and a highly public celebration of the ideals of mutuality, companionship, intimacy, fidelity, and family. Because it fulfills yearnings for security, safe haven, and connection that express our common humanity, civil marriage is an esteemed institution, and the decision whether and whom to marry is among life's momentous acts of self-definition.
 
-\item [] Vows \& Ring Ceremony
-\item [] Pronouncement
-\item [] Recessional
+\item [] \textsc{Vows \& Ring Ceremony}
+\item [] \textsc{Pronouncement}
+\item [] \textsc{Recessional}
 \end{itemize}
 
 \end{minipage}
@@ -90,7 +94,7 @@
 
 \begin{itemize}
 
-\item [] \textsc{Parents Of The Bride And Groom}
+\item [] \textsc{Parents of the Bride And Groom}
 \begin{itemize}[topsep=-5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item [] Rich \& Marian Ware
 \item [] Mark \& Kelly Mollison
@@ -102,7 +106,7 @@
 Dana Van Oostenburg, Molly Feider
 \end{itemize}
 
-\item [] \textsc{Groomspeople}
+\item [] \textsc{Groom's Crew}
 \begin{itemize}[topsep=-5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item [] Fabi\a'an Ca\~{n}as, Wade Mollison, Anthony Helmstetter, 
 Adam Bramoweth, Lauren Widelitz
@@ -127,5 +131,26 @@ Adam Bramoweth, Lauren Widelitz
 \end{minipage}
 
 \vspace*{\fill}
+
+\newpage
+
+\begin{tabular}{cccc}
+\multicolumn{4}{c}{Data mined from our text messages} \\
+\includegraphics[width=.55\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_count.png} & \multicolumn{3}{c}{\raisebox{2.8in}{Most used emojis!}} \\
+\includegraphics[width=.55\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_love_normalized.png} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.1\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_both.png}} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.0667\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_alice.png}} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.065\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_matt.png}} \\
+\end{tabular}
+
+% \begin{tabular}{ccccc}
+% & & \multicolumn{3}{c}{Emoji usage! :)} \\
+% \includegraphics[width=.5\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_count.png} & \includegraphics[width=.4\textwidth]{/Users/matt/src/iphone-sms-backup/data/wordcloud_alice.png} \\
+% \includegraphics[width=.5\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_love_normalized.png} &
+% \includegraphics[width=.4\textwidth]{/Users/matt/src/iphone-sms-backup/data/wordcloud_matt.png} &
+% \multirow{2}{*}[5.35in]{\includegraphics[width=.1\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_both.png}} &
+% \multirow{2}{*}[5.35in]{\includegraphics[width=.0667\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_alice.png}} &
+% \multirow{2}{*}[5.35in]{\includegraphics[width=.065\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_matt.png}} \\
+% \end{tabular}
 
 \end{document}

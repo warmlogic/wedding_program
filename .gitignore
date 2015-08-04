@@ -15,4 +15,5 @@ auto
 *.cb2
 *.lof
 *.toc
+*.rel
 *synctex*

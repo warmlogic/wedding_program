@@ -22,12 +22,19 @@
 \pagestyle{empty}
 \centering
 
-% add border and make background white for potrace
+% # add border and make background white for potrace
 % convert hops_upper_left.png -background white -gravity center -extent 587x382 hops_upper_left_border.png
 % convert hops_lower_right.png -background white -gravity center -extent 587x382 hops_lower_right_border.png
 
-\ThisULCornerWallPaper{.4}{hops_upper_left_border.pdf}
-\ThisLRCornerWallPaper{.4}{hops_lower_right_border.pdf}
+% # convert to pnm
+% convert hops_upper_left_border.png hops_upper_left_border.pnm
+% convert hops_lower_right_border.png hops_lower_right_border.pnm
+% # smooth with potrace
+% potrace -b pdf -i -o hops_upper_left_border.pdf hops_upper_left_border.pnm
+% potrace -b pdf -i -o hops_lower_right_border.pdf hops_lower_right_border.pnm
+
+\ThisULCornerWallPaper{.4}{./img/hops_upper_left_border.pdf}
+\ThisLRCornerWallPaper{.4}{./img/hops_lower_right_border.pdf}
 
 % \textsc{{\LARGE Ceremony Program}
 % \vspace*{\fill}
@@ -136,11 +143,11 @@ Adam Bramoweth, Lauren Widelitz
 
 \begin{tabular}{cccc}
 \multicolumn{4}{c}{Data mined from our text messages} \\
-\includegraphics[width=.55\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_count.png} & \multicolumn{3}{c}{\raisebox{2.8in}{Most used emojis!}} \\
-\includegraphics[width=.55\textwidth]{/Users/matt/src/iphone-sms-backup/data/texts_love.png} &
-\multirow{2}{*}[5.8in]{\includegraphics[width=.1\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_both.png}} &
-\multirow{2}{*}[5.8in]{\includegraphics[width=.0667\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_alice.png}} &
-\multirow{2}{*}[5.8in]{\includegraphics[width=.065\textwidth]{/Users/matt/src/iphone-sms-backup/data/emoji_matt.png}} \\
+\includegraphics[width=.55\textwidth]{./img/texts_count.png} & \multicolumn{3}{c}{\raisebox{2.8in}{Most used emojis!}} \\
+\includegraphics[width=.55\textwidth]{./img/texts_love.png} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.1\textwidth]{./img/emoji_both.png}} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.0667\textwidth]{./img/emoji_alice.png}} &
+\multirow{2}{*}[5.8in]{\includegraphics[width=.065\textwidth]{./img/emoji_matt.png}} \\
 \end{tabular}
 
 % \begin{tabular}{ccccc}
